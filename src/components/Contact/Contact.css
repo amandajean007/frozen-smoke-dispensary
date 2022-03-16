@@ -1,10 +1,11 @@
 h2 {
-    color: white;
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact {
-    color: white;
     padding: 5px;
 }
 
@@ -13,10 +14,15 @@ h2 {
     flex-direction: column;
     padding: 5px;
     align-items: center;
-    height: 700px;
 }
 
 label {
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
 }
 

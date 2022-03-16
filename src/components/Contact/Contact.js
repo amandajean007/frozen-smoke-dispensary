@@ -8,7 +8,7 @@ function Contact() {
 
   return (
     <div className="contact">
-      <h2>Contact Me:</h2>
+      <h2>Contact Frozen Smoke Dispensary</h2>
       <div className="card">
         <form className="contact-form">
           <label >
@@ -21,7 +21,7 @@ function Contact() {
           </label>
           <label>
             Message:
-            <textarea name="message" cols="100%" rows="100%" value={message} onChange={(e) => setMessage(e.target.value)} required/>
+            <textarea name="message" cols="100" rows="20" value={message} onChange={(e) => setMessage(e.target.value)} required/>
           </label>
           <input type="submit" name="submit"value='Submit' className="submit" />
         </form>
