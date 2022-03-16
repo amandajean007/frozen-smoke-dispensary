@@ -1,9 +1,10 @@
-// import React, { useState } from 'react';
-// import Home from './pages/Home';
-// import Projects from './pages/Projects';
-// import Contact from './pages/Contact';
-// // import Footer from './Footer';
-// import Header from './Header';
+import React, { useState } from 'react';
+import Home from './Home/Home';
+import Order from './Order/Order';
+import Menu from './Menu/Menu';
+import Contact from './Contact/Contact';
+import Header from './Header';
+import Footer from './Footer';
 import logo from '../assets/weed.png';
 import './portfolioContainer.css';
 // import { Link } from 'react-router-dom';
@@ -12,7 +13,7 @@ const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-modal-close]');
 const overlay = document.getElementById('overlay');
 
-console.log("hello");
+console.log("portfolio container hit");
 
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -45,23 +46,26 @@ function closeModal(modal) {
 }
 
 export default function PortfolioContainer() {
-  // const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('Home');
 
-  // const renderPage = () => {
-  //   if (currentPage === 'Home') {
-  //     return <Home />;
-  //   }
-  //   if (currentPage === 'Projects') {
-  //     return <Projects />;
-  //   }
-  //   return <Contact />;
-  // };
+  const renderPage = () => {
+    if (currentPage === 'Home') {
+      return <Home />;
+    }
+    if (currentPage === 'Order') {
+      return <Order />;
+    }
+    if (currentPage === 'Menu') {
+      return <Menu />;
+    }
+    return <Contact />;
+  };
 
-  // const handlePageChange = (page) => setCurrentPage(page);
+  const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div className="App">
-      {/* <Header currentPage={currentPage} handlePageChange={handlePageChange} /> */}
+      <Header />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p className="fsdTitle">
@@ -71,28 +75,7 @@ export default function PortfolioContainer() {
           500 US-50 #103, Gunnison, CO 81230
         </p>
         <br/>
-        <h3 className="areYouTO">
-          ARE YOU 21 OR OLDER?
-        </h3>
-        <div>
-          <ul className="nav-item">
-            {/* eslint-disable-next-line */}
-            <a className="button">YES</a>
-          </ul>
-          <ul className="nav-item">
-          {/* eslint-disable-next-line */}
-            <a data-modal-target="#modal" className='button'>
-              NO
-            </a>
-            <div className="modal" id="modal">
-              <button data-modal-close className="close-button" id="closeButton">&times;</button>
-              <div className="modal-body">
-                Sorry, you must be 21 or older to continue to this website. 😢
-              </div>
-            </div>
-            <div id="overlay"></div>
-          </ul>
-        </div>
+        <Footer />
       </header>
     </div>
   );

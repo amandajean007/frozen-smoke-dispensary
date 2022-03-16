@@ -8,17 +8,22 @@ function NavBar({ currentPage, handlePageChange}) {
             <ul className="nav-bar">
                 <li className="nav-item">
                     <a href="#home" onClick={() => handlePageChange('Home')} className={currentPage === "Home" ? 'nav-link active' : 'nav-link'}>
-                        Frozen Smoke
+                        Home
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a href="#projects" onClick={() => handlePageChange('Projects')} className={currentPage === "Projects" ? 'nav-link active' : 'nav-link'}>
-                        Projects
+                    <a href="#menu" onClick={() => handlePageChange('Menu')} className={currentPage === "Menu" ? 'nav-link active' : 'nav-link'}>
+                        Menu
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a href="#order" onClick={() => handlePageChange('Order')} className={currentPage === "Order" ? 'nav-link active' : 'nav-link'}>
+                        Order
                     </a>
                 </li>
                 <li className="nav-item">
                     <a href="#contact" onClick={() => handlePageChange('Contact')} className={currentPage === "Contact" ? 'nav-link active' : 'nav-link'}>
-                        Contact Me
+                        Contact Us
                     </a>
                 </li>
             </ul>

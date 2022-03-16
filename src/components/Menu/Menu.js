@@ -1,4 +1,6 @@
-export default function Projects() {
+import "./Menu.css";
+
+export default function Menu() {
   const triggers = document.getElementsByClassName('trigger');
   const triggerArray = Array.from(triggers).entries();
   const modals = document.getElementsByClassName('modal');
@@ -12,5 +14,7 @@ export default function Projects() {
     closeButtons[index].addEventListener('click', toggleModal);
   }
 
-  return "hi"
+  return (
+      <h1>This should be the menu</h1>
+  )
 }

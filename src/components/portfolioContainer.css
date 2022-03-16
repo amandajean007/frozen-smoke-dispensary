@@ -17,6 +17,12 @@ a.button {
     width: fit-content;
 }
 
+.buttonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .close-button {
     background-color: rgba(255, 255, 255, 0);
     width: fit-content;
@@ -25,6 +31,7 @@ a.button {
 
 .fsdTitle {
     font-size: 4em;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.651);
 }
 
 .modal {
@@ -81,6 +88,11 @@ a.button {
 
 #overlay.active {
     pointer-events: all;
+}
+
+p {
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.651);
+    font-size: 2em;
 }
 
 .portfolio-container {
