@@ -22,6 +22,11 @@ function NavBar({ currentPage, handlePageChange}) {
                     </a>
                 </li>
                 <li className="nav-item">
+                    <a href="#member" onClick={() => handlePageChange('Member')} className={currentPage === "Member" ? 'nav-link active' : 'nav-link'}>
+                        Membership
+                    </a>
+                </li>
+                <li className="nav-item">
                     <a href="#contact" onClick={() => handlePageChange('Contact')} className={currentPage === "Contact" ? 'nav-link active' : 'nav-link'}>
                         Contact Us
                     </a>
