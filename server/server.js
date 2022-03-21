@@ -15,5 +15,13 @@ app.listen(port, () => {
     if (err) console.error(err);
  
   });
-  console.log(`Server is running on port: ${port}`);
+  console.log(`Server is running on http://localhost:` + port);
 });
+
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/test');
+
+const Cat = mongoose.model('Cat', { name: String });
+
+const kitty = new Cat({ name: 'Zildjian' });
+kitty.save().then(() => console.log('meow'));
