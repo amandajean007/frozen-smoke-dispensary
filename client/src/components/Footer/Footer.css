@@ -6,4 +6,8 @@
 .footer {
   text-align: center;
   padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  right: 25%;
 }
