@@ -1,4 +1,4 @@
-*, *::after, *::before {
+/* *, *::after, *::before {
     box-sizing: border-box;
 }
 
@@ -104,4 +104,4 @@ p {
 
 .title {
     padding: 10px;
-}
+} */

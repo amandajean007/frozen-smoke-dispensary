@@ -1,13 +1,14 @@
 import './App.css';
 // import PortfolioContainer from './components/portfolioContainer'
 import Contact from './components/Contact/Contact';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 // import logo from '../src/assets/weed.png';
 import Home from './components/Home/Home';
 import Order from './components/Order/Order';
 import Menu from './components/Menu/Menu';
 import Member from './components/Member/Member';
+
 import { useState } from 'react';
 
 function App() {

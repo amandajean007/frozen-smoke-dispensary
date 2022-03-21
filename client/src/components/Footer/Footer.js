@@ -1,8 +1,8 @@
 import './Footer.css';
-import facebook from '../assets/facebook.png';
-import instagram from '../assets/instagram.png';
-import linkedin from '../assets/linkedin.png';
-import github from '../assets/github.png';
+import facebook from '../../assets/facebook.png';
+import instagram from '../../assets/instagram.png';
+import linkedin from '../../assets/linkedin.png';
+import github from '../../assets/github.png';
 
 export default function Footer() {
   return (
