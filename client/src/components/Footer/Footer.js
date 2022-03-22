@@ -12,9 +12,6 @@ export default function Footer() {
           <img alt="facebook" src={facebook}/></a>
           <a target="_blank" rel="noreferrer" href="https://www.instagram.com/frozensmokedispensary/" className="socialMedia">
           <img alt="instagram" src={instagram}/></a>
-          <br />
-          <h3>✨ Rise and shine, it's marijuana time. ✨ </h3>
-            
         </section>
     </div>
   );

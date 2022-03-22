@@ -15,6 +15,8 @@ export default function Menu() {
   }
 
   return (
-      <h1>This should be the menu</h1>
+      <h1>
+        This should be the menu
+      </h1>
   )
 }

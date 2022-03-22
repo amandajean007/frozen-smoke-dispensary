@@ -7,6 +7,7 @@ const Header = (props) => {
   return (
     <div className="header">
       <h1 id="name">Frozen Smoke Dispensary</h1>
+      <h4>Gunnison, Colorado</h4>
       <NavBar
         currentPage={props.currentPage}
         handlePageChange={props.handlePageChange}

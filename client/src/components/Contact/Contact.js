@@ -8,8 +8,10 @@ function Contact() {
 
   return (
     <div className="contact">
-      <h2>Contact Frozen Smoke Dispensary</h2>
+      <h1>Contact Us</h1>
       <div className="card">
+        <p>(970)672-3495</p>
+        <p>500 US-50 #103, Gunnison, CO 81230</p>
         <form className="contact-form">
           <label >
             Name:
