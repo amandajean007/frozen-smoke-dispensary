@@ -1,10 +1,12 @@
 import "./Home.css";
+import Header from '../Header/Header';
 
 export default function Home() {
-  
+
   return (
     <div>
-      <h1>Elevate</h1>
+      <Header />
+      only the homepage should be able to see this
     </div>
   );
 }

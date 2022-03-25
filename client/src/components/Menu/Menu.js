@@ -1,4 +1,5 @@
 import "./Menu.css";
+import Header from '../Header/Header';
 
 export default function Menu() {
   const triggers = document.getElementsByClassName('trigger');
@@ -15,8 +16,9 @@ export default function Menu() {
   }
 
   return (
-      <h1>
+      <div>
+        <Header />
         This should be the menu
-      </h1>
+      </div>
   )
 }

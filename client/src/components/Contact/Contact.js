@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import "./Contact.css"
+import "./Contact.css";
+import Header from '../Header/Header';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -8,6 +9,7 @@ function Contact() {
 
   return (
     <div className="contact">
+      <Header />
       <h1>Contact Us</h1>
       <div className="card">
         <p>(970)672-3495</p>
