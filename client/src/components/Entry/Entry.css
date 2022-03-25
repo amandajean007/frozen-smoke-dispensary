@@ -1,0 +1,39 @@
+.addy {
+    font-size: x-large;
+}
+
+.ayto {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+.aytobox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.box {
+    padding: 10px;
+    margin: 100px;
+    color:white;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.fsd {
+    font-size: 15vh;
+    font-family: 'Road Rage', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px white solid;
+}

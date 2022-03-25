@@ -1,5 +1,6 @@
 import "./Member.css";
 import { useState } from "react";
+import Header from '../Header/Header';
 
 function Member() {
   const [name, setName] = useState('');
@@ -8,24 +9,25 @@ function Member() {
 
   return (
     <div className="contact">
+      <Header />
       <h3>Become a member and receive 20% off every trip!</h3>
       <div className="card">
         <form className="contact-form">
           <label >
             Name:
-            <input type='text' name="name" value={name} onChange={(e) => setName(e.target.value)} required/>
+            <input required/>
           </label>
           <label >
             Date of Birth:
-            <input type='email' name="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+            <input required/>
           </label>
           <label >
             Email:
-            <input type='email' name="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+            <input required/>
           </label>
           <label >
             Phone Number:
-            <input type='email' name="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+            <input required/>
           </label>
           
         </form>
