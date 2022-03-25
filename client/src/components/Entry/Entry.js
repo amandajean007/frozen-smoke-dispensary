@@ -16,7 +16,9 @@ export default function Entry() {
               <Link to="/home">
                 <button className="yes">Yes</button>
               </Link>
-              <button className="no">No</button>
+              <Link to="/sorry">
+                <button className="no">No</button>
+              </Link>
             </div>
           </div>
         </div>
