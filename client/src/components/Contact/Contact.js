@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import "./Contact.css";
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -30,7 +31,7 @@ function Contact() {
           <input type="submit" name="submit"value='Submit' className="submit" />
         </form>
       </div>
-      
+      <Footer />
     </div>
   );
 }

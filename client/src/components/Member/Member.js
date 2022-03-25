@@ -1,16 +1,25 @@
 import "./Member.css";
-import { useState } from "react";
+// import { useState } from "react";
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 function Member() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('')
+  // const [name, setName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [message, setMessage] = useState('')
+
+// let express = require('express');
+// let path = require('path');
+// let app = express();
+
+// app.use(express.static(path.resolve(__dirname, 'public')));
+
+// app.listen(process.env.PORT || 3000)
 
   return (
     <div className="contact">
       <Header />
-      <h3>Become a member and receive 20% off every trip!</h3>
+      <h3>Become a member and receive 20% off every purchase!</h3>
       <div className="card">
         <form className="contact-form">
           <label >
@@ -29,10 +38,9 @@ function Member() {
             Phone Number:
             <input required/>
           </label>
-          
         </form>
       </div>
-      
+      <Footer />
     </div>
   );
 }
