@@ -3,6 +3,8 @@ import "./Member.css";
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
+// use('FrozenSmoke');
+
 function Member() {
   // const [name, setName] = useState('');
   // const [email, setEmail] = useState('');

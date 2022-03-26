@@ -1,6 +1,5 @@
 import './App.css';
 import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Menu from './components/Menu/Menu';
 import Member from './components/Member/Member';
