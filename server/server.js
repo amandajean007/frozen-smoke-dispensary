@@ -1,7 +1,11 @@
 const express = require("express");
+const colors = require("colors");
 const app = express();
 const cors = require("cors");
 const { errorHandler } = require('./middleware/errorMiddleware');
+const connectDB = require('./config/db');
+
+
 
 ////////// old
 // require("dotenv").config({ path: "./config.env" });
@@ -9,12 +13,13 @@ const { errorHandler } = require('./middleware/errorMiddleware');
 const dotenv = require("dotenv").config();
 
 const port = process.env.PORT || 5001;
+
 app.use(cors());
 app.use(express.json());
-app.use(require("./routes/record"));
+
 app.use(express.urlencoded({extended: false}))
 // get driver connection
-const dbo = require("./db/conn");
+// const dbo = require("./db/conn");
  
 app.listen(port, () => 
 // {
@@ -26,7 +31,7 @@ app.listen(port, () =>
   console.log(`Server is running on port: ${port}`));
 // });
 
-
+connectDB();
 
 app.use('/api/members', require('./routes/memberRoutes'))
 

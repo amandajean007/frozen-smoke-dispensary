@@ -1,21 +1,32 @@
 const asyncHandler = require('express-async-handler');
 
+const Member = require('../models/memberModel');
+
 // @desc    Get Members
 // @route   GET  /api/members
 // @access  Private
 const getMembers = asyncHandler(async (req, res) => {
-    res.status(200).json({ message: 'Get Members' })
+    const members = await Member.find()
+
+    res.status(200).json(members)
 });
 
 // @desc    Create Members
 // @route   POST  /api/members
 // @access  Private
 const createMember = asyncHandler(async (req, res) => {
+    console.log("req.body.text " + req.body.text);
+    
     if(!req.body.text) {
         res.status(400)
-        throw new Error('Please add a text field')
+        throw new Error('Please add text to the field')
     };
-    res.status(200).json({ message: 'Create Member' })
+
+    const member = await Member.create({
+        text: req.body.text
+    })
+
+    res.status(200).json(member)
 });
 
 // @desc    Update Members
