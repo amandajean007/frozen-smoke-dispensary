@@ -15,11 +15,12 @@ const getMembers = asyncHandler(async (req, res) => {
 // @route   POST  /api/members
 // @access  Private
 const createMember = asyncHandler(async (req, res) => {
+    console.log(req.body);
     if(!req.body.name) {
         res.status(400)
         throw new Error('Please add text to the field')
     };
-
+    
     const member = await Member.create({
         name: req.body.name,
         dob: req.body.dob,
