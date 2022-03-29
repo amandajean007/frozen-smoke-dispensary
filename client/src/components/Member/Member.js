@@ -1,46 +1,41 @@
+import React, {useState} from 'react';
 import "./Member.css";
-// import { useState } from "react";
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-// use('FrozenSmoke');
-
 function Member() {
-  // const [name, setName] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [message, setMessage] = useState('')
 
-// let express = require('express');
-// let path = require('path');
-// let app = express();
+  const [name, setName] = useState('');
+  const [dob, setDob] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
 
-// app.use(express.static(path.resolve(__dirname, 'public')));
-
-// app.listen(process.env.PORT || 3000)
+const handleSubmit = () => {
+  console.log(this.state.name);
+}
 
   return (
     <div className="contact">
       <Header />
       <h3>Become a member and receive 20% off every purchase!</h3>
       <div className="card">
-        <form className="contact-form">
+        <form className="contact-form" method="post" action="/">
           <label >
-            Name:
-            <input required/>
+            <input placeholder="Name" name='name' onChange={(e) => setName(e.target.value)} required />
           </label>
           <label >
-            Date of Birth:
-            <input required/>
+            <input placeholder="Date of Birth" name='dob' onChange={(e) => setDob(e.target.value)} required />
           </label>
           <label >
-            Email:
-            <input required/>
+            <input placeholder="E-Mail Address" name='email' onChange={(e) => setEmail(e.target.value)} required />
           </label>
           <label >
-            Phone Number:
-            <input required/>
+            <input placeholder="Phone Number" name='phone' onChange={(e) => setPhone(e.target.value)} required />
           </label>
         </form>
+        <div className="signup">
+          <button type="submit" name="submit" value='Submit' className="submit" onClick={handleSubmit}>Sign Up</button>
+        </div>
       </div>
       <Footer />
     </div>

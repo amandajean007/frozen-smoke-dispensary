@@ -9,7 +9,6 @@ const getMembers = asyncHandler(async (req, res) => {
     const members = await Member.find()
 
     res.status(200).json(members);
-    // console.log(members);
 });
 
 // @desc    Create Members
@@ -29,6 +28,7 @@ const createMember = asyncHandler(async (req, res) => {
     })
 
     res.status(200).json(member)
+    console.log(member);
 });
 
 // @desc    Update Members

@@ -7,19 +7,19 @@ const memberSchema = mongoose.Schema(
             required: [true, 'Please add your name']
         },
         dob: {
-            type: String,
-            required: [true],
+            type: Number,
+            required: [true, 'Please add your date of birth'],
             // match: [must be 21]
         },
         email: {
             type: String,
-            required: [true],
+            required: [true, 'Please add your e-mail'],
             unique: true,
             match: [/.+@.+\..+/, 'Must use a valid email address']
         },
         phone: {
-            type: String,
-            required: [true]
+            type: Number,
+            required: [true, 'Please add your phone number']
         }
     },
 );
