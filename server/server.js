@@ -20,25 +20,16 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}))
  
 ///////////////////////////////////////////
-app.use(bodyParser.urlencoded())
+// app.use(bodyParser.urlencoded())
 
-app.get('/', function(req, res) {
-  res.send('express is working')
-})
+// app.get('/', function(req, res) {
+//   res.send('express is working')
+// })
 
-// POST to /members
-//
-//  {
-//    'name': 'foo',
-//    'dob': '12251990'
-//    'email': 'foo@example.com',
-//    'phone': '3034899999'
-//  }
-
-app.post('/members', (req, res) => {
-  console.log(req.body.name); // 'foo'
-  console.log(req.body.phone); // '3034899999'
-})
+// app.post('/members', (req, res) => {
+//   console.log(req.body.name); // 'foo'
+//   console.log(req.body.phone); // '3034899999'
+// })
 
 ///////////////////////////////////////////
 
@@ -48,5 +39,6 @@ app.listen(port, () =>
 connectDB();
 
 app.use('/api/members', require('./routes/memberRoutes'))
+app.use('/api/messages', require('./routes/messageRoutes'))
 
 app.use(errorHandler);
