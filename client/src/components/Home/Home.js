@@ -6,9 +6,9 @@ export default function Home() {
 
   return (
     <div>
-      <Header />
-      only the homepage should be able to see this
-      <Footer />
+        <Header />
+        <h1>only the homepage should be able to see this</h1>
+        <Footer />
     </div>
   );
 }

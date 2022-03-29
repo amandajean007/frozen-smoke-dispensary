@@ -4,9 +4,10 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 function Contact() {
+  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState('');
 
   return (
     <div className="contact">
@@ -17,18 +18,15 @@ function Contact() {
         <p>500 US-50 #103, Gunnison, CO 81230</p>
         <form className="contact-form">
           <label >
-            Name:
-            <input type='text' name="name" value={name} onChange={(e) => setName(e.target.value)} required/>
+            <input type='text' name="name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} required/>
           </label>
           <label >
-            Email:
-            <input type='email' name="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+            <input type='email' name="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
           </label>
           <label>
-            Message:
-            <textarea name="message" cols="100" rows="20" value={message} onChange={(e) => setMessage(e.target.value)} required/>
+            <textarea name="message" cols="50" rows="10" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} required/>
           </label>
-          <input type="submit" name="submit"value='Submit' className="submit" />
+          <button type="submit" name="submit"value='Submit' className="submit">Submit</button>
         </form>
       </div>
       <Footer />
