@@ -11,7 +11,8 @@ function Member() {
   const [phone, setPhone] = useState('');
 
 const handleSubmit = () => {
-  console.log(this.state.name);
+  console.log(name, dob, email, phone);
+
 }
 
   return (

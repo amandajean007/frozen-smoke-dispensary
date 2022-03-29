@@ -19,7 +19,7 @@ const createMember = asyncHandler(async (req, res) => {
         res.status(400)
         throw new Error('Please add text to the field')
     };
-
+    
     const member = await Member.create({
         name: req.body.name,
         dob: req.body.dob,
