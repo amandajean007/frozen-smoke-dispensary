@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import "./Member.css";
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import { getMembers, postMember } from '../../utils/member_api_util';
 
 function Member() {
 
@@ -13,6 +14,8 @@ function Member() {
 const handleSubmit = () => {
   console.log(name, dob, email, phone);
 
+  // getMembers().then((members) => console.log(members));
+  postMember({name, dob, email, phone}).then((members) => console.log(members));
 }
 
   return (
