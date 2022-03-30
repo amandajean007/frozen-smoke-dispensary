@@ -12,6 +12,7 @@ input {
     height: 30px;
     padding: 5px;
     margin: 5px;
+    background-color: rgb(208, 238, 234);
 }
 
 label {
@@ -20,6 +21,12 @@ label {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.member {
+    color: rgb(208, 238, 234);
+    background-color: rgb(15, 15, 15);
+    height: 100vh;
 }
 
 .signup {

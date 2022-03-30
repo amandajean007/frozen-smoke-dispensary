@@ -26,7 +26,7 @@ function Contact() {
     <div className="contact">
       <Header />
       <h1>Contact Us</h1>
-      <div className="card">
+      <div className="contactCard">
         <p>(970)672-3495</p>
         <p>500 US-50 #103, Gunnison, CO 81230</p>
         <form id='contactForm' className="contact-form" method="post" action="/">
@@ -36,6 +36,9 @@ function Contact() {
         </form>
         <div className="s">
           <button type="submit" name="submit" value='Submit' className="submit" onClick={handleSubmit}>Submit</button>
+        </div>
+        <div className="googleReviews">
+          <a href="https://www.google.com/search?q=frozen+smoke+dispensary&rlz=1C5CHFA_enUS991US991&oq=frozen+smoke+dispensary&aqs=chrome..69i57j46i175i199i512j0i512j46i512j0i512j0i10i512l2j0i22i30l3.3905j0j15&sourceid=chrome&ie=UTF-8#lrd=0x873f92e6665ea4c9:0xd60874f3d9ec7e4b,1,,," target="_blank">Google Reviews</a>
         </div>
       </div>
       <Footer />
