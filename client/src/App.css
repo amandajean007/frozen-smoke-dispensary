@@ -37,13 +37,14 @@ button {
   padding: 10px;
   border-radius: 5px;
   border: 0px solid rgba(0, 0, 0, 0.459);
-  background-image: linear-gradient(rgba(255, 255, 255), rgba(48, 137, 189));
+  background-color: paleturquoise;
   color: black;
   width: 100px;
+  text-align: center;
 }
 
 button:hover {
-  background-image: linear-gradient(rgba(48, 137, 189), rgba(255, 255, 255));
+  background-color: #61dafb;
 }
 
 @keyframes App-logo-spin {
