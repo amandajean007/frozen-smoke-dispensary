@@ -4,17 +4,19 @@ const messageSchema = mongoose.Schema(
     {
         name: {
             type: String,
-            required: [true, 'Please add your name']
+            required: [true, 'Please add your name'],
+            unique: false
         },
         email: {
             type: String,
             required: [true, 'Please add your e-mail'],
-            unique: true,
-            match: [/.+@.+\..+/, 'Must use a valid email address']
+            match: [/.+@.+\..+/, 'Must use a valid email address'],
+            unique: false
         },
         message: {
             type: String,
-            required: [true, 'Please add a message']
+            required: [true, 'Please add a message'],
+            unique: false
         }
     },
 );

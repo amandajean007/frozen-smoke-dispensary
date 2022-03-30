@@ -1,5 +1,5 @@
 .addy {
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .ayto {
@@ -10,23 +10,18 @@
 
 .aytobox {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-
+    color: white;
 }
 
-.box {
-    padding: 10px;
-    margin: 100px;
-    color:white;
-}
-
-.column {
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
     height: 100vh;
+    justify-content: center;
 }
 
 .fsd {
@@ -36,4 +31,5 @@
     flex-direction: column;
     align-items: center;
     border-bottom: 1px white solid;
+    color: white;
 }
