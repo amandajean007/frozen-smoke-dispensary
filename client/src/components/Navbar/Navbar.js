@@ -12,9 +12,9 @@ function NavBar({ currentPage, handlePageChange}) {
                         Home
                     </a>
                     <div className="dropdown-content">
-                        <a className="dropdownLink" href="#">Link 1</a>
+                        {/* <a className="dropdownLink" href="#">Link 1</a>
                         <a className="dropdownLink" href="#">Link 2</a>
-                        <a className="dropdownLink" href="#">Link 3</a>
+                        <a className="dropdownLink" href="#">Link 3</a> */}
                     </div>
                 </li>
                 <li className="nav-item dropdown">
