@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 export default function Home() {
 
   return (
-    <div>
+    <div className="home">
         <Header />
         <h1>only the homepage should be able to see this</h1>
         <Footer />

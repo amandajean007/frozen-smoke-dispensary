@@ -24,10 +24,10 @@ function Member() {
   }
 
   return (
-    <div className="contact">
+    <div className="member">
       <Header />
       <h3>Become a member and receive 20% off every purchase!</h3>
-      <div className="card">
+      <div className="memberCard">
         <form className="contact-form" id='memberForm' method="post" action="/">
             <input placeholder="Name" name='name' onChange={(e) => setName(e.target.value)} required />
             <input placeholder="Date of Birth" name='dob' onChange={(e) => setDob(e.target.value)} required />

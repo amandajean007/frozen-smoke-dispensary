@@ -1,11 +1,3 @@
-.link {
-  color:aquamarine;
-}
-
-.link:hover {
-  color: pink;
-}
-
 .nav {
   position: top;
   top: 0;
