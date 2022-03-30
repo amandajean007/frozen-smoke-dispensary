@@ -2,17 +2,23 @@ button:hover {
     cursor: pointer;
 }
 
-h3 {
+p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 42px;
+    text-align: center;
 }
 
 input {
     height: 30px;
     padding: 5px;
     margin: 5px;
-    background-color: rgb(208, 238, 234);
+}
+input::backdrop {
+    background-color: rgb(15, 15, 15)
 }
 
 label {
@@ -29,8 +35,45 @@ label {
     height: 100vh;
 }
 
+.memberCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+.memberCardRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    /* border: 2px yellow solid; */
+    border-radius: 30px;
+    padding: 50px;
+    background-color: rgb(39, 39, 39)
+}
+
 .signup {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+input {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border-style: none;
+    border-bottom: 1px white solid;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(39, 39, 39) inset !important;
+    -webkit-text-fill-color: aliceblue;
+}
+
+textarea {
+    background-color: rgb(231, 231, 231);
 }
