@@ -33,3 +33,9 @@ label {
     align-items: top;
 }
 
+
+.s {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
