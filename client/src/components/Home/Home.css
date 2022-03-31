@@ -13,6 +13,11 @@
     text-shadow: 5px 5px rgba(255, 255, 255,);
 }
 
+.googleReviews {
+    font-size: 2em;
+    padding: 30px;
+}
+
 #gummyPromo {
     font-size: 2em;
     font-family: 'Road Rage', cursive;
@@ -28,8 +33,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* background-color: rgb(39, 39, 39); */
-    background-image: url(../../assets/backgroundlight.jpg);
+    background-color: rgb(39, 39, 39);
+    box-shadow: 12px 12px 48px 0px rgba(202, 252, 249, 0.425);
     width: 50%;
     border-radius: 50px;
 }

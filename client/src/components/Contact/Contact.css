@@ -26,6 +26,7 @@ a:hover {
     border-radius: 30px;
     padding: 50px;
     width: 45%;
+    box-shadow: 12px 12px 48px 0px rgba(202, 252, 249, 0.425);
 }
 
 .contact {
@@ -41,11 +42,6 @@ a:hover {
     flex-direction: column;
     padding: 10px;
     align-items: center;
-}
-
-.googleReviews {
-    font-size: 2em;
-    padding: 30px;
 }
 
 .reference {
