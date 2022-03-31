@@ -73,7 +73,3 @@ input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px rgb(39, 39, 39) inset !important;
     -webkit-text-fill-color: aliceblue;
 }
-
-textarea {
-    background-color: rgb(231, 231, 231);
-}
