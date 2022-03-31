@@ -45,6 +45,23 @@ function NavBar({ currentPage, handlePageChange}) {
                     </div>
                 </li>
                 <li className="nav-item dropdown">
+                    <a href="brands" onClick={() => handlePageChange('Brands')} className={currentPage === "Brands" ? 'nav-link active' : 'nav-link'}>
+                        Brands
+                    </a>
+                    <div className="dropdown-content">
+                        <a className="dropdownLink" href="#">Yummies Gummies</a>
+                        <a className="dropdownLink" href="#">Green Hornet</a>
+                        <a className="dropdownLink" href="#">Kanha</a>
+                        <a className="dropdownLink" href="#">Dixie</a>
+                        <a className="dropdownLink" href="#">Dabba</a>
+                        <a className="dropdownLink" href="#">Cheeba Chews</a>
+                        <a className="dropdownLink" href="#">Spherex</a>
+                        <a className="dropdownLink" href="#">The Clear</a>
+                        <a className="dropdownLink" href="#"></a>
+                    
+                    </div>
+                </li>
+                <li className="nav-item dropdown">
                     <a href="contact" onClick={() => handlePageChange('Contact')} className={currentPage === "Contact" ? 'nav-link active' : 'nav-link'}>
                         Contact Us
                     </a>
