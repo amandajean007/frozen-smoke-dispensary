@@ -4,9 +4,10 @@
     align-items: center;
 }
 
-#freeJointPromo {
-    font-size: 2em;
-    font-family: 'Road Rage', cursive;
+#banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .glow {
@@ -29,14 +30,41 @@
     height: 100vh;
 }
 
-.promo {
+.jointRow {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(39, 39, 39);
+}
+
+.topbanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-image: url("../../assets/FSD_Storefront.png");
+    height: 20vh;
+}
+
+.promoGummies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     box-shadow: 12px 12px 48px 0px rgba(202, 252, 249, 0.425);
-    width: 50%;
+    width: 25%;
     border-radius: 50px;
+    background-color: yellow;
+    margin: 20px;
+}
+
+.promoJoint {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 12px 12px 48px 0px rgba(202, 252, 249, 0.425);
+    width: 25%;
+    border-radius: 50px;
+    background-color: red;
+    margin: 20px;
 }
 
 .promoContainer {
@@ -51,7 +79,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 
 .spaceBottom {
