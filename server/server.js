@@ -5,11 +5,6 @@ const cors = require("cors");
 const { errorHandler } = require('./middleware/errorMiddleware');
 const connectDB = require('./config/db');
 
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-
-const dotenv = require("dotenv").config();
-
 const port = process.env.PORT || 5001;
 
 app.use(cors());
@@ -23,6 +18,5 @@ app.listen(port, () =>
 connectDB();
 
 app.use('/api/members', require('./routes/memberRoutes'));
-app.use('/api/messages', require('./routes/messageRoutes'));
 
 app.use(errorHandler);

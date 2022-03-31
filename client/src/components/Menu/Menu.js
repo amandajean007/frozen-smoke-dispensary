@@ -17,10 +17,12 @@ export default function Menu() {
   }
 
   return (
-      <div className="menu">
-        <Header />
-        This should be the menu
-        <Footer />
+    <div className="menu">
+      <Header />
+      <div>
+        <script async="" id="dutchie--embed__script" src="https://dutchie.com/api/v2/embedded-menu/623a6a3126a07e009ea69962.js"></script>
       </div>
+      <Footer />
+    </div>
   )
 }
