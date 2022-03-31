@@ -11,30 +11,29 @@
 }
 
 .glow {
-    text-shadow: 5px 5px rgba(255, 255, 255,);
+    padding: 25px;
 }
 
-.googleReviews {
+/* .googleReviews {
     font-size: 2em;
     padding: 30px;
-}
+} */
 
-#gummyPromo {
+/* #gummyPromo {
     font-size: 2em;
-    font-family: 'Road Rage', cursive;
-}
+} */
 
 .home {
     color: rgb(208, 238, 234);
     background-color: rgb(15, 15, 15);
-    height: 100vh;
+    height: 100%;
 }
 
-.jointRow {
+/* .jointRow {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+} */
 
 .topbanner {
     display: flex;
@@ -45,33 +44,26 @@
     height: 20vh;
 }
 
-.promoGummies {
+/* .promoJoint {
     display: flex;
     flex-direction: row;
     justify-content: center;
     box-shadow: 12px 12px 48px 0px rgba(202, 252, 249, 0.425);
     width: 25%;
-    border-radius: 50px;
-    background-color: yellow;
-    margin: 20px;
-}
-
-.promoJoint {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-shadow: 12px 12px 48px 0px rgba(202, 252, 249, 0.425);
-    width: 25%;
-    border-radius: 50px;
+    min-width: 500px;
+    border-radius: 25px;
     background-color: red;
     margin: 20px;
-}
+} */
 
 .promoContainer {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 30px;
+    width: 100vw;
 }
 
 .promoImage {
@@ -79,7 +71,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border-radius: 30px; */
+    border-radius: 10px;
 }
 
 .spaceBottom {

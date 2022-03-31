@@ -1,0 +1,11 @@
+.promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 0px 30px 0px rgba(202, 252, 249, 0.425);
+    width: 25%;
+    min-width: 500px;
+    border-radius: 25px;
+    background-color: rgb(39, 39, 39);
+    margin: 20px;
+}
