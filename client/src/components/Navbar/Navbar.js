@@ -1,7 +1,7 @@
 
 import React from 'react';
 import "./Navbar.css"
-import flower from '../../assets/icon-flower.png';
+// import flower from '../../assets/icon-flower.png';
 
 function NavBar({ currentPage, handlePageChange}) {
     return (
@@ -40,7 +40,7 @@ function NavBar({ currentPage, handlePageChange}) {
                         Membership
                     </a>
                     <div className="dropdown-content">
-                        <a className="dropdownLink" href="#">Member Benefits</a>
+                        {/* <a className="dropdownLink" href="#">Member Benefits</a> */}
                         <a className="dropdownLink" href="/member">Sign Up</a>
                     </div>
                 </li>
@@ -50,8 +50,8 @@ function NavBar({ currentPage, handlePageChange}) {
                     </a>
                     <div className="dropdown-content">
                         <a className="dropdownLink" target="_blank" href="https://www.google.com/maps/dir//frozen+smoke+dispensary/@38.5411617,-106.9426253,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x873f92e6665ea4c9:0xd60874f3d9ec7e4b!2m2!1d-106.9404632!2d38.5393374">Directions</a>
-                        {/* <a className="dropdownLink" href="#">Link 2</a>
-                        <a className="dropdownLink" href="#">Link 3</a> */}
+                        <a className="dropdownLink" href="#">frozensmokedispensary@gmail.com</a>
+                        <a className="dropdownLink" href="#">(970) 672-3495</a>
                     </div>
                 </li>
             </li>

@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+html {
+  Scroll-behavior: smooth;
+}
+
 #root {
     /* background-image: url(../../client/src/assets/background.jpg);
     background-position: center center;

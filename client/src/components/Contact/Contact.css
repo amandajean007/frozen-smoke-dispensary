@@ -6,13 +6,13 @@ h1 {
 }
 
 a {
-    color: rgb(86, 57, 216);
+    color: rgb(37, 56, 223);
     text-decoration: none;
     text-align: center;
 }
 
 a:hover {
-    color: rgb(147, 130, 223)
+    color: rgba(57, 73, 216)
 }
 
 .contactCard {                   
@@ -26,6 +26,7 @@ a:hover {
     border-radius: 30px;
     padding: 50px;
     width: 45%;
+    box-shadow: 12px 12px 48px 0px rgba(202, 252, 249, 0.425);
 }
 
 .contact {
@@ -43,11 +44,6 @@ a:hover {
     align-items: center;
 }
 
-.googleReviews {
-    font-size: 2em;
-    padding: 30px;
-}
-
 .reference {
     display: flex;
     justify-content: center;
@@ -56,4 +52,9 @@ a:hover {
 .space {
     padding: 5px;
     margin: 5px;
+}
+
+#telephone {
+    color: rgb(208, 238, 234);
+    font-size: 42px;
 }
