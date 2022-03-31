@@ -8,20 +8,29 @@ h1 {
 a {
     color: rgb(86, 57, 216);
     text-decoration: none;
+    text-align: center;
 }
+
 a:hover {
     color: rgb(147, 130, 223)
 }
 
-
-.contactCard {
-    margin-bottom: 75px;
+.contactCard {                   
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 12%;
+    font-size: 3em;
+    background-color: rgb(39, 39, 39);
+    border-radius: 30px;
+    padding: 50px;
+    width: 45%;
 }
 
 .contact {
+    display: flex;
+    flex-direction: column;
     color: rgb(208, 238, 234);
     background-color: rgb(15, 15, 15);
     height: 100vh;
@@ -37,4 +46,14 @@ a:hover {
 .googleReviews {
     font-size: 2em;
     padding: 30px;
+}
+
+.reference {
+    display: flex;
+    justify-content: center;
+}
+
+.space {
+    padding: 5px;
+    margin: 5px;
 }
