@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "concurrently \"cd server && npm run develop\" \"cd client && npm start\" \"nodemon server/server.js\" ",
+    "develop": "concurrently \"cd server && npm start\" \"cd client && npm start\" \"nodemon server/server.js\" ",
     "start": "node server/server.js",
     "server": "nodemon server/server.js"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/amandajean007/frozen-smoke-dispensary.git"
   },
-  "author": "",
+  "author": "Amanda McBee",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amandajean007/frozen-smoke-dispensary/issues"
@@ -26,6 +26,7 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-async-handler": "^1.2.0",
+    "heroku": "^7.60.0",
     "mongodb": "^4.4.1",
     "mongoose": "^6.2.8"
   },
