@@ -6,7 +6,7 @@ import "./Navbar.css"
 function NavBar({ currentPage, handlePageChange}) {
     return (
         <div className="nav">
-            <li className="nav-bar">
+            <div className="nav-bar">
                 <li className="nav-item dropdown">
                     <a href="home" onClick={() => handlePageChange('Home')} className={currentPage === "Home" ? 'nav-link active dropbtn' : 'nav-link dropbtn'}>
                         Home
@@ -18,7 +18,7 @@ function NavBar({ currentPage, handlePageChange}) {
                     </div>
                 </li>
                 <li className="nav-item dropdown">
-                    <button href="/menu" onClick={() => handlePageChange('Menu')} className={currentPage === "Menu"}>
+                    <button href="/menu" onClick={() => handlePageChange('Menu')} className={currentPage === "Menu" ? 'active' : ''}>
                         🛒 Order
                     </button>
                     <div className="dropdown-content">
@@ -71,7 +71,7 @@ function NavBar({ currentPage, handlePageChange}) {
                         <a className="dropdownLink" href="#">(970) 672-3495</a>
                     </div>
                 </li>
-            </li>
+            </div>
         </div> 
 
     )
