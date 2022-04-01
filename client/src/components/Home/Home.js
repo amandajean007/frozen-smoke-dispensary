@@ -4,18 +4,17 @@ import Footer from '../Footer/Footer';
 import Promo from '../Promo/Promo';
 // import store from '../../assets/FSD_Storefront.png';
 import yummies from '../../assets/yummies.png';
-import starjoint from '../../assets/icon-joint.png'
+import starjoint from '../../assets/icon-joint.png';
+import storefront from '../../assets/FSD_Storefront.png';
 
 export default function Home() {
 
   return (
     <div className="home">
       <Header />
-
-      <div className="topbanner">
-        <div id="banner"></div>
+      <div className="row">
+        <img className="image" src={storefront} />
       </div>
-
       <div className="promoContainer">
         <Promo
           promoImg={yummies}

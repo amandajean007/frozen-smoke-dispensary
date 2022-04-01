@@ -2,25 +2,25 @@ import React, { useState } from 'react';
 import "./Contact.css";
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import { postMessage } from '../../utils/message_api_util';
+// import { postMessage } from '../../utils/message_api_util';
 
 function Contact() {
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  // const [name, setName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [message, setMessage] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
 
-    alert('Thank you for the message!');
-    // getMessages().then((messages) => console.log(messages));
-    postMessage({ name, email, message }).then((messages) => console.log(messages));
+  //   alert('Thank you for the message!');
+  //   // getMessages().then((messages) => console.log(messages));
+  //   postMessage({ name, email, message }).then((messages) => console.log(messages));
 
-    const form = document.getElementById('contactForm')
-    console.log(form);
-    form.reset();
-  }
+  //   const form = document.getElementById('contactForm')
+  //   console.log(form);
+  //   form.reset();
+  // }
 
   return (
     <div className="contact">

@@ -18,21 +18,21 @@ function NavBar({ currentPage, handlePageChange}) {
                     </div>
                 </li>
                 <li className="nav-item dropdown">
-                    <button href="menu" onClick={() => handlePageChange('Menu')} className={currentPage === "Menu" ? 'nav-link active' : 'nav-link'}>
+                    <button href="menu" onClick={() => handlePageChange('Menu')} className={currentPage === "Menu" ? 'active' : ''}>
                         🛒 Order
                     </button>
                     <div className="dropdown-content">
-                        <a className="dropdownLink" href="#">Flower</a>
-                        <a className="dropdownLink" href="#">Joints</a>
-                        <a className="dropdownLink" href="#">Concentrates</a>
-                        <a className="dropdownLink" href="#">Cartridges</a>
-                        <a className="dropdownLink" href="#">Edibles</a>
-                        <a className="dropdownLink" href="#">Drinks</a>
-                        <a className="dropdownLink" href="#">Ice Cream</a>
-                        <a className="dropdownLink" href="#">CBD</a>
-                        <a className="dropdownLink" href="#">Tinctures</a>
-                        <a className="dropdownLink" href="#">Topicals</a>
-                        <a className="dropdownLink" href="#">Merch</a>
+                        <a className="dropdownLink" href="/menu">Flower</a>
+                        <a className="dropdownLink" href="/menu">Joints</a>
+                        <a className="dropdownLink" href="/menu">Concentrates</a>
+                        <a className="dropdownLink" href="/menu">Cartridges</a>
+                        <a className="dropdownLink" href="/menu">Edibles</a>
+                        <a className="dropdownLink" href="/menu">Drinks</a>
+                        <a className="dropdownLink" href="/menu">Ice Cream</a>
+                        <a className="dropdownLink" href="/menu">CBD</a>
+                        <a className="dropdownLink" href="/menu">Tinctures</a>
+                        <a className="dropdownLink" href="/menu">Topicals</a>
+                        <a className="dropdownLink" href="/menu">Merch</a>
                     </div>
                 </li>
                 <li className="nav-item dropdown">
