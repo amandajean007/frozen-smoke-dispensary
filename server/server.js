@@ -25,7 +25,11 @@ app.listen(port, () =>
 connectDB();
 
 app.use('/api/members', require('./routes/memberRoutes'));
-app.get("/", (req, res) => res.send("Hello World!!"));
 
+if (process.env.NODE_ENV === "development") {
+  app.get("/", (req, res) => {
+    res.send("Hello World!!");
+  });
+}
 
 app.use(errorHandler);
