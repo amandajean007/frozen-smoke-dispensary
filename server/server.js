@@ -7,7 +7,12 @@ const connectDB = require('./config/db');
 require('dotenv').config();
 
 const port = process.env.PORT || 5001;
-
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+  app.get("/", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 app.use(cors());
 app.use(express.json());
@@ -20,5 +25,7 @@ app.listen(port, () =>
 connectDB();
 
 app.use('/api/members', require('./routes/memberRoutes'));
-app.get("/", (req, res) => res.sendFile(path.resolve(__dirname, '../../../../index.html')));
+app.get("/", (req, res) => res.send("Hello World!!"));
+
+
 app.use(errorHandler);
