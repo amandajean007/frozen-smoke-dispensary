@@ -12,7 +12,7 @@ export default function Entry() {
         </h1>
         <div className="aytobox">
           <h1 className="ayto">Are you twenty one?</h1>
-          <div>
+          <div className="row">
             <Link to="/home">
               <button className="yes">Yes</button>
             </Link>

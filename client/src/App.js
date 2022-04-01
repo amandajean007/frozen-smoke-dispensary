@@ -5,6 +5,7 @@ import Menu from './components/Menu/Menu';
 import Member from './components/Member/Member';
 import Entry from './components/Entry/Entry';
 import Sorry from './components/Sorry/Sorry';
+import Brands from './components/Brands/Brands';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="main">
       <Routes>
+        <Route path="/brands" element={<Brands />} />
         <Route path="/sorry" element={<Sorry />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/menu" element={<Menu />} />

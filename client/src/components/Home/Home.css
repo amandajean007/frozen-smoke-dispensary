@@ -11,29 +11,20 @@
 }
 
 .glow {
-    text-shadow: 5px 5px rgba(255, 255, 255,);
-}
-
-.googleReviews {
-    font-size: 2em;
-    padding: 30px;
-}
-
-#gummyPromo {
-    font-size: 2em;
-    font-family: 'Road Rage', cursive;
+    padding: 25px;
 }
 
 .home {
     color: rgb(208, 238, 234);
     background-color: rgb(15, 15, 15);
-    height: 100vh;
+    height: 100%;
 }
 
-.jointRow {
+.image {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
 }
 
 .topbanner {
@@ -45,33 +36,14 @@
     height: 20vh;
 }
 
-.promoGummies {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-shadow: 12px 12px 48px 0px rgba(202, 252, 249, 0.425);
-    width: 25%;
-    border-radius: 50px;
-    background-color: yellow;
-    margin: 20px;
-}
-
-.promoJoint {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-shadow: 12px 12px 48px 0px rgba(202, 252, 249, 0.425);
-    width: 25%;
-    border-radius: 50px;
-    background-color: red;
-    margin: 20px;
-}
-
 .promoContainer {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 30px;
+    width: 100vw;
 }
 
 .promoImage {
@@ -79,7 +51,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border-radius: 30px; */
+    border-radius: 10px;
 }
 
 .spaceBottom {
