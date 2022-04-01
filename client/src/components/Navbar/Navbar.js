@@ -18,7 +18,7 @@ function NavBar({ currentPage, handlePageChange}) {
                     </div>
                 </li>
                 <li className="nav-item dropdown">
-                    <button href="menu" onClick={() => handlePageChange('Menu')} className={currentPage === "Menu" ? 'active' : ''}>
+                    <button href="/menu" onClick={() => handlePageChange('Menu')} className={currentPage === "Menu"}>
                         🛒 Order
                     </button>
                     <div className="dropdown-content">
