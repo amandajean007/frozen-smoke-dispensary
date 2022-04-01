@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const port = process.env.PORT || 5001;
 
-app.get("/", (req, res) => res.send("Hello World!!"));
+
 app.use(cors());
 app.use(express.json());
 
@@ -20,5 +20,5 @@ app.listen(port, () =>
 connectDB();
 
 app.use('/api/members', require('./routes/memberRoutes'));
-
+app.get("/", (req, res) => res.send("Hello World!!"));
 app.use(errorHandler);
