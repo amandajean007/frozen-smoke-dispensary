@@ -4,6 +4,7 @@ const app = express();
 const cors = require("cors");
 const { errorHandler } = require('./middleware/errorMiddleware');
 const connectDB = require('./config/db');
+require('dotenv').config();
 
 const port = process.env.PORT || 5001;
 

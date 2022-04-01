@@ -19,7 +19,7 @@ function Member() {
     // getMembers().then((members) => console.log(members));
     postMember({ name, dob, email, phone }).then((members) => console.log(members));
 
-    const form = document.getElementById('memberForm')
+    const form = document.getElementById('memberForm');
     console.log(form);
     form.reset();
   }
