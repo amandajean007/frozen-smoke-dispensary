@@ -20,5 +20,5 @@ app.listen(port, () =>
 connectDB();
 
 app.use('/api/members', require('./routes/memberRoutes'));
-app.get("/", (req, res) => res.send("Hello World!!"));
+app.get("/", (req, res) => res.sendFile(path.resolve(__dirname, '../../../../index.html')));
 app.use(errorHandler);
