@@ -2,15 +2,17 @@
 import React from 'react';
 import "./Navbar.css"
 // import flower from '../../assets/icon-flower.png';
+import { Link } from 'react-router-dom';
 
-function NavBar({ currentPage, handlePageChange}) {
+function NavBar() {
     return (
         <div className="nav">
             <div className="nav-bar">
                 <li className="nav-item dropdown">
-                    <a href="home" onClick={() => handlePageChange('Home')} className={currentPage === "Home" ? 'nav-link active dropbtn' : 'nav-link dropbtn'}>
+
+                    <Link to='/home' className='nav-link dropbtn'>
                         Home
-                    </a>
+                    </Link>
                     <div className="dropdown-content">
                         {/* <a className="dropdownLink" href="#">Link 1</a>
                         <a className="dropdownLink" href="#">Link 2</a>
@@ -18,9 +20,11 @@ function NavBar({ currentPage, handlePageChange}) {
                     </div>
                 </li>
                 <li className="nav-item dropdown">
-                    <button href="/menu" onClick={() => handlePageChange('Menu')} className={currentPage === "Menu" ? 'active' : ''}>
-                        🛒 Order
-                    </button>
+                    <Link to='/menu'>
+                        <button>
+                            🛒 Order
+                        </button>
+                    </Link>
                     <div className="dropdown-content">
                         <a className="dropdownLink" href="/menu">Flower</a>
                         <a className="dropdownLink" href="/menu">Joints</a>
@@ -36,43 +40,40 @@ function NavBar({ currentPage, handlePageChange}) {
                     </div>
                 </li>
                 <li className="nav-item dropdown">
-                    <a href="member" onClick={() => handlePageChange('Member')} className={currentPage === "Member" ? 'nav-link active' : 'nav-link'}>
+                    <Link to='/member' className='nav-link dropbtn'>
                         Membership
-                    </a>
-                    <div className="dropdown-content">
-                        {/* <a className="dropdownLink" href="#">Member Benefits</a> */}
-                        <a className="dropdownLink" href="/member">Sign Up</a>
-                    </div>
+                    </Link>
+                    {/* <div className="dropdown-content">
+                        <a className="dropdownLink" href="#">Member Benefits</a>
+                        <Link className="dropdownLink" to='/member'>Sign Up</Link>
+                    </div> */}
                 </li>
                 <li className="nav-item dropdown">
-                    <a href="brands" onClick={() => handlePageChange('Brands')} className={currentPage === "Brands" ? 'nav-link active' : 'nav-link'}>
+                    <Link to='/brands' className='nav-link'>
                         Brands
-                    </a>
+                    </Link>
                     <div className="dropdown-content">
-                        <a className="dropdownLink" href="#">Yummies Gummies</a>
-                        <a className="dropdownLink" href="#">Green Hornet</a>
-                        <a className="dropdownLink" href="#">Kanha</a>
-                        <a className="dropdownLink" href="#">Dixie</a>
-                        <a className="dropdownLink" href="#">Dabba</a>
-                        <a className="dropdownLink" href="#">Cheeba Chews</a>
-                        <a className="dropdownLink" href="#">Spherex</a>
-                        <a className="dropdownLink" href="#">The Clear</a>
-                        <a className="dropdownLink" href="#"></a>
-                    
+                        <Link to='/Cheeba' className="dropdownLink">Cheeba Chews</Link>
+                        <Link to='/Clear' className="dropdownLink">The Clear</Link>
+                        <Link to='/Dabba' className="dropdownLink">Dabba</Link>
+                        <Link to='/Dixie' className="dropdownLink">Dixie</Link>
+                        <Link to='/Eureka' className="dropdownLink">Eureka</Link>
+                        <Link to='/GHornet' className="dropdownLink">Green Hornet</Link>
+                        <Link to='/Kahna' className="dropdownLink">Kahna</Link>
+                        <Link to='/Spherex' className="dropdownLink">Spherex</Link>
+                        <Link to='/Yummies' className="dropdownLink">Yummies</Link>
                     </div>
                 </li>
                 <li className="nav-item dropdown">
-                    <a href="contact" onClick={() => handlePageChange('Contact')} className={currentPage === "Contact" ? 'nav-link active' : 'nav-link'}>
-                        Contact Us
-                    </a>
+                    <Link to='/contact' className='nav-link'>Contact Us</Link>
                     <div className="dropdown-content">
                         <a className="dropdownLink" target="_blank" href="https://www.google.com/maps/dir//frozen+smoke+dispensary/@38.5411617,-106.9426253,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x873f92e6665ea4c9:0xd60874f3d9ec7e4b!2m2!1d-106.9404632!2d38.5393374">Directions</a>
-                        <a className="dropdownLink" href="#">frozensmokedispensary@gmail.com</a>
-                        <a className="dropdownLink" href="#">(970) 672-3495</a>
+                        <a className="dropdownLink" mailto="frozensmokedispensary@gmail.com">frozensmokedispensary@gmail.com</a>
+                        <a className="dropdownLink" to="9706723495">(970) 672-3495</a>
                     </div>
                 </li>
             </div>
-        </div> 
+        </div>
 
     )
 }
