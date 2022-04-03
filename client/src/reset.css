@@ -1,4 +1,4 @@
-html, body, header, nav, h1, h3, h4, h5, a,
+body, header, nav, h1, h3, h4, h5, a,
 ul, li, strong, main, button, i,
 section, img, div, h2, p, form,
 fieldset, label, input, textarea,
@@ -13,11 +13,24 @@ span, article, footer, time, small {
   text-decoration:inherit;
   vertical-align:inherit;
   box-sizing:inherit;
-  background:transparent;
+  background: transparent;
   user-select: none;
-
 }
 
+html {
+  background: rgb(15, 15, 15);
+  margin:0px;
+  padding:0px;
+  border:0px;
+  outline:0px;
+  font:inherit;
+  color:inherit;
+  text-align:inherit;
+  text-decoration:inherit;
+  vertical-align:inherit;
+  box-sizing:inherit;
+  user-select: none;
+}
 
 ol, ul {
   list-style:none;

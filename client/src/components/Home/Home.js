@@ -13,7 +13,7 @@ export default function Home() {
     <div className="home">
       <Header />
       <div className="row">
-        <img className="image" src={storefront} />
+        <img className="image" alt="storefront" src={storefront} />
       </div>
       <div className="promoContainer">
         <Promo
