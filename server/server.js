@@ -26,10 +26,10 @@ connectDB();
 
 app.use('/api/members', require('./routes/memberRoutes'));
 
-if (process.env.NODE_ENV === "development") {
-  app.get("/", (req, res) => {
-    res.send("Hello World!!");
-  });
-}
+// if (process.env.NODE_ENV === "development") {
+//   app.get("/", (req, res) => {
+//     res.send("Hello World!!");
+//   });
+// }
 
 app.use(errorHandler);
