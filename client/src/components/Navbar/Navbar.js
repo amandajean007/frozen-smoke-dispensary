@@ -14,9 +14,6 @@ function NavBar() {
                         Home
                     </Link>
                     <div className="dropdown-content">
-                        {/* <a className="dropdownLink" href="#">Link 1</a>
-                        <a className="dropdownLink" href="#">Link 2</a>
-                        <a className="dropdownLink" href="#">Link 3</a> */}
                     </div>
                 </li>
                 <li className="nav-item dropdown">
@@ -43,10 +40,6 @@ function NavBar() {
                     <Link to='/member' className='nav-link dropbtn'>
                         Membership
                     </Link>
-                    {/* <div className="dropdown-content">
-                        <a className="dropdownLink" href="#">Member Benefits</a>
-                        <Link className="dropdownLink" to='/member'>Sign Up</Link>
-                    </div> */}
                 </li>
                 <li className="nav-item dropdown">
                     <Link to='/brands' className='nav-link'>
