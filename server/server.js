@@ -26,10 +26,10 @@ connectDB();
 
 app.use('/api/members', require('./routes/memberRoutes'));
 
-// if (process.env.NODE_ENV === "development") {
-//   app.get("/", (req, res) => {
-//     res.send("Hello World!!");
-//   });
-// }
+if (process.env.NODE_ENV === "development") {
+  app.get("/", (req, res) => {
+    res.send("Sorry, but our page is under contruction. See you soon!!");
+  });
+}
 
 app.use(errorHandler);

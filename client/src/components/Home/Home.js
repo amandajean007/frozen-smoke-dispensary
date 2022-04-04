@@ -6,6 +6,7 @@ import Promo from '../Promo/Promo';
 import yummies from '../../assets/yummies.png';
 import starjoint from '../../assets/icon-joint.png';
 import storefront from '../../assets/FSD_Storefront.png';
+import mug from '../../assets/white.png';
 
 export default function Home() {
 
@@ -19,6 +20,11 @@ export default function Home() {
         <Promo
           promoImg={yummies}
           promoText={"Yummies Gummies 2 for $30!"}
+          promoHref={"/menu"}
+        />
+        <Promo
+          promoImg={mug}
+          promoText={"Frozen Smoke Dispensary Mugs $25"}
           promoHref={"/menu"}
         />
         <div className="promo">
