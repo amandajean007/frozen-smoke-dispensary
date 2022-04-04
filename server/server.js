@@ -5,6 +5,7 @@ const cors = require("cors");
 const { errorHandler } = require('./middleware/errorMiddleware');
 const connectDB = require('./config/db');
 require('dotenv').config();
+const path = require('path');
 
 const port = process.env.PORT || 5001;
 if (process.env.NODE_ENV === "production") {
