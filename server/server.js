@@ -1,5 +1,5 @@
 const express = require("express");
-const colors = require("colors");
+require("colors");
 const app = express();
 const cors = require("cors");
 const { errorHandler } = require('./middleware/errorMiddleware');
