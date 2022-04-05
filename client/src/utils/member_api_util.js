@@ -4,8 +4,7 @@ let address = '';
 
 if (process.env.NODE_ENV === "production") {
     address = 'https://frozen-smoke.herokuapp.com/'
-};
-if (process.env.NODE_ENV === "development") {
+} else {
     address = 'http://localhost:5002/'
 };
 
