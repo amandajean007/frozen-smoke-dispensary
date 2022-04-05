@@ -5,7 +5,6 @@ import Promo from '../Promo/Promo';
 // import store from '../../assets/FSD_Storefront.png';
 import yummies from '../../assets/yummies.png';
 import starjoint from '../../assets/icon-joint.png';
-import storefront from '../../assets/FSD_Storefront.png';
 import mug from '../../assets/white.png';
 
 export default function Home() {
@@ -13,9 +12,7 @@ export default function Home() {
   return (
     <div className="home">
       <Header />
-      <div className="row">
-        <img className="image" alt="storefront" src={storefront} />
-      </div>
+      <div className="row storefront" id="banner"></div>
       <div className="promoContainer">
         <Promo
           promoImg={yummies}

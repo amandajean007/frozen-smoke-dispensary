@@ -2,7 +2,6 @@ import React from 'react';
 import NavBar from '../Navbar/Navbar';
 import './Header.css';
 
-
 const Header = (props) => {
   return (
     <div className="header">
