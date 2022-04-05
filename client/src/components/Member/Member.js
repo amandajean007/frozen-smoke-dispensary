@@ -14,7 +14,7 @@ function Member() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    
     alert('Thanks for signing up!');
     // getMembers().then((members) => console.log(members));
     postMember({ name, dob, email, phone }).then((members) => console.log(members));

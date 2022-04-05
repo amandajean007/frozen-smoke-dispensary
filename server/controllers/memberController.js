@@ -16,6 +16,7 @@ const getMembers = asyncHandler(async (req, res) => {
 // @access  Private
 const createMember = asyncHandler(async (req, res) => {
     console.log(req.body);
+    console.log("BOOTYBOOTYBOOTYBOOTY***************");
     if(!req.body.name) {
         res.status(400)
         throw new Error('Please add text to the field')
