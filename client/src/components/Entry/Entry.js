@@ -12,7 +12,8 @@ export default function Entry() {
       
       <div className="content">
         <h1 className="fsd">Frozen Smoke Dispensary
-          <p className="addy">500 US-50 #103, Gunnison, CO 81230</p>
+          <div className="addy">500 US-50 #103, Gunnison, CO 81230</div>
+          <div className="phoneNumber">(970) 672-3495</div>
         </h1>
         <div className="aytobox">
           <h1 className="ayto">Are you twenty one or older?</h1>
