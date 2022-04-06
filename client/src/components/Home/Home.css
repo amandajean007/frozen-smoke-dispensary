@@ -16,10 +16,6 @@
     
   }  
 
-.glow {
-    padding: 25px;
-}
-
 .home {
     color: rgb(208, 238, 234);
     background-color: rgb(15, 15, 15);
@@ -48,12 +44,10 @@
 }
 
 .promoImage {
-    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
-    height: 200px;
+    height: 400px;
     width: auto;
 }
 
