@@ -21,9 +21,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(15, 15, 15);
     height: 100vh;
     justify-content: center;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.card video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: -2;
 }
 
 .fsd {
