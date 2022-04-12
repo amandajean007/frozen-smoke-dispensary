@@ -1,0 +1,40 @@
+.box {
+    padding: 50px;
+    margin: 30px;
+    border: 1px solid #ccc;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mason {
+    background-color: rgb(9, 19, 71);
+    height: 100vh;
+    color: white;
+}
+.mason-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mason-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.portal {
+    height: 100vh;
+    color: white;
+}
+.portal-col {
+    display: flex;
+    flex-direction: column;
+}
+.portal-row {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}

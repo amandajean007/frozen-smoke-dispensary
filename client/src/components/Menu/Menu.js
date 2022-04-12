@@ -2,6 +2,7 @@ import "./Menu.css";
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
+
 export default function Menu() {
   const triggers = document.getElementsByClassName('trigger');
   const triggerArray = Array.from(triggers).entries();
@@ -19,9 +20,14 @@ export default function Menu() {
   return (
     <div className="menu">
       <Header />
-        Menu
+      <div className="column">
+        <div className="row flex">
+      
+
         {/* <script async="" id="dutchie--embed__script" src="https://dutchie.com/api/v2/embedded-menu/623a6a3126a07e009ea69962.js"></script>; */}
       <Footer />
+      </div>
+      </div>
     </div>
   )
 }
