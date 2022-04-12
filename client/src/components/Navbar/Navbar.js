@@ -9,12 +9,9 @@ function NavBar() {
         <div className="nav">
             <div className="nav-bar">
                 <li className="nav-item dropdown">
-
                     <Link to='/home' className='nav-link dropbtn'>
                         Home
                     </Link>
-                    <div className="dropdown-content">
-                    </div>
                 </li>
                 <li className="nav-item dropdown">
                     <Link to='/menu'>

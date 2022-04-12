@@ -12,3 +12,7 @@ export const postMember = (memberData) => {
     console.log(memberData);
     return axios.post(address + 'api/members', memberData)
 };
+
+export const getMembers = () => {
+    return axios.get(address + 'api/members')
+};
