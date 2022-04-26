@@ -7,8 +7,6 @@ export default function Entry() {
   return (
     <div className="card">
       <video src={smoke} autoPlay muted loop id="myVideo"></video>
-
-      <div className="overlay"></div>
       
       <div className="content">
         <h1 className="fsd">Frozen Smoke Dispensary

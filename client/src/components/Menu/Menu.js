@@ -21,13 +21,11 @@ export default function Menu() {
     <div className="menu">
       <Header />
       <div className="column">
-        <div className="row flex">
-      
-
-        {/* <script async="" id="dutchie--embed__script" src="https://dutchie.com/api/v2/embedded-menu/623a6a3126a07e009ea69962.js"></script>; */}
+        <div className="row flex promoContainer">
+          Menu
+        </div>
+      </div>
       <Footer />
-      </div>
-      </div>
     </div>
   )
 }

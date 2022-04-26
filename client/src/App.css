@@ -9,6 +9,7 @@
   }
 }
 
+/* 
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -19,7 +20,8 @@
   color: rgb(0, 0, 0);
   font-family: 'Road Rage', cursive;
   font-size: 36px;
-}
+  background-color: green;
+} */
 
 .App-link {
   color: #6197fb;

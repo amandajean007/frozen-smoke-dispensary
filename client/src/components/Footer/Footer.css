@@ -6,7 +6,7 @@
   bottom: 0;
   z-index: 2;
   width: 100vw;
-  background-color: rgb(15, 15, 15);
+  background-color: rgba(15, 15, 15, 0);
 }
 
 section {
