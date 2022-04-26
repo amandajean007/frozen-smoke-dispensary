@@ -1,16 +1,50 @@
 import './Footer.css';
 import facebook from '../../assets/facebook.png';
 import instagram from '../../assets/instagram.png';
+import membership from '../../assets/membership.png';
+import contact from '../../assets/contact-mail.png';
+import home from '../../assets/home.png';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
     <div className="footer">
       <section>
+        <a className="socialMedia">
+          <Link to='/home' className='nav-link'>
+            <img className="pixicon" alt="home" src={home} />
+          </Link>
+        </a>
         <a target="_blank" rel="noreferrer" href="https://www.facebook.com/pages/Frozen-Smoke-Dispensary/110359036402777" className="socialMedia">
-          <img alt="facebook" src={facebook} /></a>
+          <img className="pixicon" alt="facebook" src={facebook} />
+        </a>
         <a target="_blank" rel="noreferrer" href="https://www.instagram.com/frozensmokedispensary/" className="socialMedia">
-          <img alt="instagram" src={instagram} /></a>
+          <img className="pixicon" alt="instagram" src={instagram} />
+        </a>
+        <a className="socialMedia">
+          <Link to='/member' className='nav-link'>
+            <img className="pixicon" alt="membership" src={membership} />
+          </Link>
+        </a>
+        <a className="socialMedia">
+          <Link to='/contact' className='nav-link'>
+            <img className="pixicon" alt="contact Us" src={contact} />
+          </Link>
+        </a>
       </section>
+    
+      <div id="copyright">
+        <div>
+          &copy;<a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icons created by Freepik - Flaticon</a>
+        </div>
+        <div>
+          &copy;<a href="https://www.flaticon.com/free-icons/membership" title="membership icons">Membership icons created by SBTS2018 - Flaticon</a>
+        </div>
+        <div>
+          &copy;<a href="https://www.flaticon.com/free-icons/contact" title="contact icons">Contact icons created by Cuputo - Flaticon</a>
+        </div>
+      </div>
+    
     </div>
   );
 }

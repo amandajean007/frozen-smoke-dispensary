@@ -16,7 +16,7 @@ export default function Home() {
     script.id = "dutchie--embed__script";
 
     menu.appendChild(script);
-
+    
     return () => {
       menu.removeChild(script);
     }
