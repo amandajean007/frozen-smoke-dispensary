@@ -6,7 +6,7 @@
   bottom: 0;
   z-index: 2;
   width: 100vw;
-  background-color: rgb(15, 15, 15);
+  background-color: rgba(15, 15, 15, 0);
 }
 
 section {
@@ -17,3 +17,12 @@ section {
     padding: 5px;
     margin: 5px;
   }
+
+.pixicon {
+  height: 30px;
+  width: 30px;
+}
+
+#copyright {
+  
+}

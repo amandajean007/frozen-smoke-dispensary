@@ -11,9 +11,9 @@
     background-image: url('../../assets/FSD_Storefront.png');
     background-repeat: no-repeat;
     background-position: center;
-    height: 200px;
-    margin: 20px;
-    
+    background-size: cover;
+    height: 100px;
+    margin: 20px 0px;
   }  
 
 .home {

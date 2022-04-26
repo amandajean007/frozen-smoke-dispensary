@@ -17,8 +17,5 @@ html {
 }
 
 #root {
-    /* background-image: url(../../client/src/assets/background.jpg);
-    background-position: center center;
-    background-size: cover; */
     height: 100%;
 }

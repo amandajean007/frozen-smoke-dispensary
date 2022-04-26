@@ -1,22 +1,16 @@
 import React from 'react';
-import NavBar from '../Navbar/Navbar';
 import './Header.css';
 
-const Header = (props) => {
+import smoke from "../Entry/vecteezy_indoor-shot-of-controlled-smoke-controlled-smoke-creating-heavy-clouds-from-left-to-right-on-dark-background-ideal-for-your-effects-in-your-projects-or-mystical-topics-in-your-footage-4k-4096-x_1787527.mp4"
+
+
+const Header = () => {
   return (
     <div className="header">
-      <div>
-        <NavBar
-          currentPage={props.currentPage}
-          handlePageChange={props.handlePageChange}
-        />
-      </div> 
-      <br/>
-      <div>
+      <video src={smoke} autoPlay muted loop id="myOtherVideo"></video>
+      <div className="content headercontent">
         <h1 id="name">Frozen Smoke Dispensary</h1>
         <h4>Gunnison, Colorado</h4>
-        <h5>500 US-50 #103, Gunnison CO 81230</h5>
-        <h5>(970) 672-3495</h5>
       </div>
     </div>
   );

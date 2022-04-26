@@ -9,8 +9,9 @@ export default function Brands() {
     return (
         <div className="brands">
           <Header />
-            Menu
-            {/* <script async="" id="dutchie--embed__script" src="https://dutchie.com/api/v2/embedded-menu/623a6a3126a07e009ea69962.js"></script>; */}
+            <div className="words promoContainer">
+              Brands
+            </div>
           <Footer />
         </div>
       )

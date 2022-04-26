@@ -1,7 +1,4 @@
-
-import React from 'react';
 import "./Navbar.css"
-// import flower from '../../assets/icon-flower.png';
 import { Link } from 'react-router-dom';
 
 function NavBar() {
