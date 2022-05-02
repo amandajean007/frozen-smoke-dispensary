@@ -26,6 +26,8 @@
     position: absolute;
     right: 0;
     width: 100%;
+    background: rgb(15, 15, 15);
+    z-index: -2;
 }
 
 .card video {

@@ -22,6 +22,7 @@ function Member() {
     const form = document.getElementById('memberForm');
     console.log(form);
     form.reset();
+    
   }
 
   return (
