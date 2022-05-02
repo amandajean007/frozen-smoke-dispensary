@@ -23,12 +23,6 @@ export default function Footer() {
           </Link>
         </a>
 
-        <a className="socialMedia">
-          <Link to='/contact' className='nav-link'>
-            <img className="pixicon" alt="contact Us" src={contact} />
-          </Link>
-        </a>
-
         <a target="_blank" rel="noreferrer" href="https://www.facebook.com/pages/Frozen-Smoke-Dispensary/110359036402777" className="socialMedia">
           <img className="pixicon" alt="facebook" src={facebook} />
         </a>
@@ -38,7 +32,6 @@ export default function Footer() {
         </a>
         &copy;<a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icons created by Freepik - Flaticon</a>
         &copy;<a href="https://www.flaticon.com/free-icons/membership" title="membership icons">Membership icons created by SBTS2018 - Flaticon</a>
-        &copy;<a href="https://www.flaticon.com/free-icons/contact" title="contact icons">Contact icons created by Cuputo - Flaticon</a>
       </section>
 
     </div>

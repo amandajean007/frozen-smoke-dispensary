@@ -19,11 +19,11 @@ input {
     width: 450px;
 }
 input::backdrop {
-    background-color: rgb(15, 15, 15)
+    background-color: rgb(255, 255, 255)
 }
 
 label {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 35px;
     display: flex;
     flex-direction: row;
@@ -31,8 +31,8 @@ label {
 }
 
 .member {
-    color: rgb(240, 240, 240);
-    background-color: rgb(15, 15, 15);
+    color: rgb(15, 15, 15);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
 }
 
@@ -47,15 +47,21 @@ div.signup {
 }
 
 input {
-    background-color: rgb(15, 15, 15);
-    color: rgb(240, 240, 240);
+    background-color: rgb(255, 255, 255);
+    color: rgb(15, 15, 15);
     border-style: none;
-    border-bottom: 1px white solid;
+    border-bottom: 1px rgb(0, 0, 0) solid;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px rgb(15, 15, 15) inset !important;
-    -webkit-text-fill-color: rgb(240, 240, 240);
+    -webkit-box-shadow: 0 0 0 30px rgb(255, 255, 255) inset !important;
+    -webkit-text-fill-color: rgb(15, 15, 15);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
