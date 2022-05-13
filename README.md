@@ -1,3 +1,3 @@
 # frozen-smoke-dispensary
 
-https://frozen-smoke.herokuapp.com/
+www.frozensmokedispensary.com
